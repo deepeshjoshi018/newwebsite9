@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Website</title>
+
+    <!-- ===== CSS START ===== -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: #00ffcc;
+            color: black;
+        }
+
+        button:hover {
+            background: #00ccaa;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.5);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <!-- ===== CSS END ===== -->
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 Welcome to My Website</h1>
+        <p>HTML + CSS + JavaScript (Single File)</p>
+    </header>
+
+    <section>
+        <h2>Click the Button</h2>
+        <p id="text">JavaScript magic will happen here</p>
+        <button onclick="changeText()">Click Me</button>
+    </section>
+
+    <footer>
+        <p>© 2026 | Made by You</p>
+    </footer>
+
+    <!-- ===== JAVASCRIPT START ===== -->
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML =
+                "🔥 JavaScript is Working Perfectly!";
+        }
+    </script>
+    <!-- ===== JAVASCRIPT END ===== -->
+
+</body>
+</html>
